@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #fff;
+}
+.container
+{
+    height: 25vh;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 20px;
+}
+.container form input
+{
+    height: 5vh;
+    text-align: center;
+    width: 20vw;
+}
+.container form button
+{
+    height: 5vh;
+    width: 6vw;
+    background-color: green;
+    border: none;
+    color: aquamarine;
+    margin-left: 5px;
+}
+
+.search-results
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-result
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.search-result img
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img
+{
+    opacity: 0.8;
+}
+.search-result a
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+
+.show
+{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+.show button
+{
+    border: none;
+    background-color: blue;
+    padding: 15px;
+    color: #fff;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width:1020px) {
+    .container
+    {
+        height: 20vh;
+        width: 100vw;
+    }
+    .container form
+    {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .container form input
+    {
+        width: 35vw;
+    }
+    .container form button
+    {
+        width: 20vw;
+        margin-left: 5px;
+    }
+    .search-results
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-result
+    {
+        width: 250px;
+    }
+}
